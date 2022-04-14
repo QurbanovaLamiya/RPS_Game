@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/images.jpg" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>RPS Game</title>
+</head>
+
+<body class="bg-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class=" jumbotron  bg-light text-center text-dark p-4 mt-3">
+                    <h1 class="display-4">Rock Paper Scissors</h1>
+                    <p class="lead">Please select one of the 'R P S' (press) buttons to play</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="sectionPlayPanel">
+            <div class="col-lg-5">
+                <div class="jumbotron bg-light text-center text-dark">
+                    <p id="winGame1" class="pt-5 h2"></p>
+                    <h3>Player 1 (ME)</h3>
+                    <p class="h4 text-info" id="player1ScorePanel"> Point: 0 </p>
+                </div>
+                <div class="card d-flex py-4 align-items-center">
+                    <img id="player1Img" src="./img/r.png" alt="Rock" style="width: 70%;">
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <p class="display-1 text-white text-center pt-5">VS</p>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="jumbotron bg-light text-center text-dark">
+                    <p class="pt-5 h2" id="winGame2"></p>
+                    <h3>Player 2 (COMP)</h3>
+                    <p class="h4  text-info " id="player2ScorePanel"> Point: 0 </p>
+                </div>
+
+                <div class="card d-flex py-4 align-items-center">
+                    <img id="player2Img" src="./img/s.png" alt="Scissors" style="width:70%; transform:rotateY(180deg);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
